@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>O Estudante Universitario</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="site-header">
+        <div class="brand">
+          <div class="logo">OU</div>
+          <div>
+            <h1>O Estudante Universitario</h1>
+            <p class="tagline">Um unico jogo. Jogue instantaneamente.</p>
+          </div>
+        </div>
+        <nav class="meta">
+          <span>HTML5</span>
+          <span>Godot</span>
+          <span>Plataforma</span>
+        </nav>
+      </header>
+
+      <section class="hero">
+        <div class="description">
+          <h2>Chegue a universidade vencendo os desafios</h2>
+          <p>
+            Site dedicado ao jogo "O Estudante Universitario", exportado em
+            HTML5. Clique e jogue direto na janela em tela cheia abaixo.
+          </p>
+          <div class="actions">
+            <button id="focus-game" type="button">Iniciar jogo</button>
+            <button id="toggle-fullscreen" type="button">Tela cheia</button>
+          </div>
+        </div>
+        <div class="stats">
+          <div>
+            <span class="label">Version</span>
+            <span class="value">0.1.0</span>
+          </div>
+          <div>
+            <span class="label">Controles</span>
+            <span class="value">Teclado + Mouse</span>
+          </div>
+          <div>
+            <span class="label">Objetivo</span>
+            <span class="value">Chegar a universidade</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="info-grid">
+        <article class="info-card">
+          <h3>Objetivo do jogo</h3>
+          <p>
+            Um estudante universitario, com sua mochila, precisa superar
+            desafios para chegar a universidade.
+          </p>
+        </article>
+        <article class="info-card">
+          <h3>Personagem principal</h3>
+          <ul>
+            <li>Parado, andando, pulando e morrendo</li>
+            <li>Ataque curto com a mochila</li>
+            <li>Ataque longo arremessando livros</li>
+          </ul>
+        </article>
+        <article class="info-card">
+          <h3>Mecanicas de sobrevivencia</h3>
+          <ul>
+            <li>Vidas limitadas com game over</li>
+            <li>Itens para recuperar vida</li>
+            <li>Municao de livros para o ataque longo</li>
+          </ul>
+        </article>
+        <article class="info-card">
+          <h3>Inimigos</h3>
+          <ul>
+            <li>Zumbis da privacao de sono</li>
+            <li>Xicaras de cafe saltitantes</li>
+            <li>Boleto da faculdade (chefao)</li>
+            <li>Provas voadoras e despertadores gigantes</li>
+          </ul>
+        </article>
+        <article class="info-card">
+          <h3>Telas e interface</h3>
+          <ul>
+            <li>Tela inicial com opcao de iniciar</li>
+            <li>Fase principal unica</li>
+            <li>Tela de game over e pausa</li>
+          </ul>
+        </article>
+        <article class="info-card">
+          <h3>Audio e extras</h3>
+          <ul>
+            <li>SFX: mochila, livros, dano e inimigos</li>
+            <li>BGM: temas para fase, inicio e game over</li>
+            <li>Plataformas moveis, portais e finalizacao</li>
+          </ul>
+        </article>
+      </section>
+
+      <main class="game-area">
+        <div class="frame-shell">
+          <div class="frame-overlay" id="frame-overlay">
+            <h3>Carregando o jogo</h3>
+            <p>Se nada aparecer, verifique o caminho do iframe.</p>
+          </div>
+          <iframe
+            id="game-frame"
+            title="Jeu Godot"
+            src="game/index.html"
+            loading="lazy"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </main>
+
+      <footer class="site-footer">
+        <p>Feito com Godot e publicado em HTML5.</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
