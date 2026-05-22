@@ -1,12 +1,12 @@
 :root {
-  --bg: #0b0f14;
-  --bg-accent: #1b2533;
-  --card: rgba(255, 255, 255, 0.06);
-  --text: #f7f4ef;
-  --muted: #b6c2d0;
-  --accent: #7A2D8C;
-  --accent-2: #2ec4b6;
-  --shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+  --bg: #0a000f;
+  --bg-accent: #150020;
+  --card: rgba(180, 0, 255, 0.07);
+  --text: #f0e8ff;
+  --muted: #b89fd4;
+  --accent: #9b30ff;
+  --accent-2: #6a00cc;
+  --shadow: 0 20px 50px rgba(100, 0, 180, 0.35);
 }
 
 * {
@@ -19,9 +19,9 @@ body {
   font-family: "Space Grotesk", "Segoe UI", sans-serif;
   color: var(--text);
   background:
-    radial-gradient(circle at top left, rgba(46, 196, 182, 0.15), transparent 45%),
-    radial-gradient(circle at 20% 80%, rgba(255, 159, 28, 0.2), transparent 40%),
-    linear-gradient(140deg, #0b0f14 0%, #0b1220 55%, #101b2a 100%);
+    radial-gradient(circle at top left, rgba(155, 48, 255, 0.18), transparent 45%),
+    radial-gradient(circle at 20% 80%, rgba(106, 0, 204, 0.22), transparent 40%),
+    linear-gradient(140deg, #0a000f 0%, #100020 55%, #18003a 100%);
   min-height: 100vh;
 }
 
@@ -157,16 +157,10 @@ body {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.actions button:first-child {
+.actions button {
   background: linear-gradient(135deg, var(--accent), var(--accent-2));
-  color: #0b0f14;
+  color: #f0e8ff;
   box-shadow: var(--shadow);
-}
-
-.actions button:last-child {
-  background: transparent;
-  color: var(--text);
-  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .actions button:hover {
